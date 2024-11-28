@@ -338,4 +338,30 @@ echo "<br> Good Afternoon";
 }
 
 greetMe();
+
+// 25/11/2024
+
+function streetName ($name){
+    echo "$name Asaba, <br>";
+
+}
+
+    echo "<br>";
+
+streetName ("DLA");
+
+streetName ("PRINCE");
+
+echo "<br>";
+
+function homeAdress ($number, $name){
+    echo "$number street $name Asaba, <br>";
+
+}
+
+    echo "<br>";
+
+homeAdress ("5th", "DLA");
+
+homeAdress ("7th", "PRINCE");
 ?>
