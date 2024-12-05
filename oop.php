@@ -7,6 +7,7 @@ class fruit {
     // these are the properties
     public $name;
     public $colour;
+    protected $type;
 
     // these are the methods
     function setName($name) {
@@ -63,6 +64,32 @@ class car {
 
 $toyota = new car("2025");
 
-echo $toyota->getModel();
+echo $toyota->getModel()."<br>";
+
+$toyota->colour = "red";
+
+class vegetable extends fruit {
+    public $nutrient;
+
+    function setType($type) {
+        $this->type = $type;
+    }
+
+    function getType() {
+        return $this->type;
+    }
+
+}
+
+$pumpkinLeaf = new vegetable();
+$pumpkinLeaf->setName("pumpkin leaf");
+
+echo $pumpkinLeaf->getName();
+
+echo "<br>";
+$pumpkinLeaf->setType("Pome");
+echo $pumpkinLeaf->getType();
+
+
 
 ?>
